@@ -2232,3 +2232,14 @@ footer {
     }
 
 }
+/* =========================================
+   EXPLORE SECTION — LOCKED UNTIL BUTTON CLICK
+========================================= */
+
+.explore-section {
+    display: none;
+}
+
+.explore-section.explore-open {
+    display: block;
+}

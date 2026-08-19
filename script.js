@@ -221,3 +221,26 @@ const revealObserver = new IntersectionObserver(
 revealElements.forEach((element) => {
     revealObserver.observe(element);
 });
+ /* =========================================
+    EXPLORE EVENT — UNLOCK GALLERY
+ ========================================= */
+
+const exploreTrigger = document.getElementById("exploreTrigger");
+const exploreSection = document.getElementById("explore");
+
+exploreTrigger.addEventListener("click", function (event) {
+
+    event.preventDefault();
+
+    // Unlock the Explore / Gallery section
+    exploreSection.classList.add("explore-open");
+
+    // Smoothly scroll to it
+    setTimeout(() => {
+        exploreSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }, 50);
+
+});

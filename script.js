@@ -1,4 +1,30 @@
 /* =========================================
+   INITIAL WEBSITE LOCK
+========================================= */
+
+document.body.classList.add("site-locked");
+
+const exploreTrigger = document.getElementById("exploreTrigger");
+
+exploreTrigger.addEventListener("click", function (event) {
+
+    event.preventDefault();
+
+    // Unlock the complete website
+    document.body.classList.remove("site-locked");
+
+    // Wait for the sections to become visible
+    setTimeout(() => {
+
+        document.getElementById("explore").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }, 50);
+
+});
+/* =========================================
    MARKET KHETRA 2026
    GALLERY
 ========================================= */

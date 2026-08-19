@@ -2243,3 +2243,11 @@ footer {
 .explore-section.explore-open {
     display: block;
 }
+/* =========================================
+   INITIAL WEBSITE LOCK
+   ONLY HERO VISIBLE
+========================================= */
+
+body.site-locked > *:not(.hero) {
+    display: none !important;
+}
